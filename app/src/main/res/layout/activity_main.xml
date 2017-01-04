@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top_activity"
+    tools:context="mrblack.myapplication.MainActivity">
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_step_top" />
+
+    <include
+        android:id="@+id/include_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_76sdp"
+        layout="@layout/include_layout" />
+
+    <include
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_below="@+id/include_sex"
+        android:id="@+id/include_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_age" />
+    <include
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_below="@+id/include_age"
+        android:id="@+id/include_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_height" />
+
+    <include
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_below="@+id/include_height"
+        android:id="@+id/include_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_weight" />
+  <!--  <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_265sdp"
+        layout="@layout/include_layout" />
+-->
+</RelativeLayout>
