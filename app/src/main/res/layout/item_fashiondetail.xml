@@ -1,3 +1,15 @@
+
+
+
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:layout_width="@dimen/_71sdp"
+    android:layout_height="@dimen/_71sdp"
+    android:layout_margin="@dimen/_8sdp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+    android:textColor="@color/colorWhite"/>
+
+    <!--
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/_71sdp"
@@ -7,7 +19,7 @@
     android:orientation="vertical"
     android:translationZ="@dimen/_4sdp">
 
-    <RelativeLayout
+  &lt;!&ndash;  <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_item_detail_activity"
@@ -20,6 +32,6 @@
             android:layout_gravity="center"
             android:foregroundGravity="center"
             android:src="@mipmap/ic_launcher" />
-    </RelativeLayout>
+    </RelativeLayout>&ndash;&gt;
 
-</LinearLayout>
+</LinearLayout>-->

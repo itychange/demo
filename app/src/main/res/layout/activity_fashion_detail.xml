@@ -5,21 +5,69 @@
     android:layout_height="match_parent"
     android:background="#187ceb"
     android:orientation="vertical">
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_300sdp" />
+        android:layout_height="@dimen/_250sdp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_8sdp"
+                android:text="CONTINUE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_8sdp"
+                android:text="CONTINUE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_8sdp"
+                android:text="CONTINUE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_8sdp"
+                android:text="CONTINUE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <TextView
-        android:text="Fashion"
-        android:textColor="@color/colorWhite"
-        android:layout_marginLeft="@dimen/_4sdp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:text="Fashion"
+        android:textColor="@color/colorWhite" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rcvList"
-        android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-       />
+        android:scrollbars="vertical" />
 </LinearLayout>

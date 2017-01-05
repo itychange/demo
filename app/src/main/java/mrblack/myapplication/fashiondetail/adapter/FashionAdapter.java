@@ -72,7 +72,7 @@ public class FashionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
         public FashionViewHolder(View itemView) {
             super(itemView);
-            this.ivPhoto = (AppCompatImageView) itemView.findViewById(R.id.ivPhoto);
+           // this.ivPhoto = (AppCompatImageView) itemView.findViewById(R.id.ivPhoto);
             /*RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) itemView.getLayoutParams();
             layoutParams.height =75;
             itemView.setLayoutParams(layoutParams);*/
