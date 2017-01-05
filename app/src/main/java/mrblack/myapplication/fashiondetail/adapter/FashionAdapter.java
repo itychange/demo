@@ -76,8 +76,11 @@ public class FashionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             /*RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) itemView.getLayoutParams();
             layoutParams.height =75;
             itemView.setLayoutParams(layoutParams);*/
-            itemView.setPadding(4,4,4,4);
-            //itemView.setOnClickListener(clickListener);
+      /*      itemView.setPadding((int) mContext.getResources().getDimension(R.dimen._minus9sdp),
+                    (int) mContext.getResources().getDimension(R.dimen._minus9sdp),
+                    (int) mContext.getResources().getDimension(R.dimen._minus9sdp)
+                    ,(int) mContext.getResources().getDimension(R.dimen._minus9sdp));
+            //itemView.setOnClickListener(clickListener);*/
         }
     }
 
