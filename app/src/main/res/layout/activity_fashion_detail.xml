@@ -15,9 +15,10 @@
             android:id="@+id/ivContent"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="@dimen/_240sdp"
-            android:layout_height="@dimen/_270sdp"
+            android:layout_height="@dimen/_250sdp"
             android:layout_marginLeft="@dimen/_4sdp"
-            android:layout_marginStart="@dimen/_4sdp" />
+            android:layout_marginStart="@dimen/_4sdp"
+          />
 
         <LinearLayout
             style="@style/Widget.AppCompat.Button.Colored"

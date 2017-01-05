@@ -9,14 +9,18 @@
         android:layout_height="match_parent"
         android:padding="@dimen/_2sdp">
 
-        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        <ImageView
             android:layout_width="@dimen/_71sdp"
             android:layout_height="@dimen/_71sdp"
-            android:padding="@dimen/_4sdp"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/dress"
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView" />
     </RelativeLayout>
-    /
 
 </LinearLayout><!--
 <?xml version="1.0" encoding="utf-8"?>
