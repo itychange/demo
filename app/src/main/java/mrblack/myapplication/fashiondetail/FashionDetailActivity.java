@@ -34,7 +34,7 @@ public class FashionDetailActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        for(int i=0;i<10;i++){
+        for(int i=0;i<8;i++){
             listInforFashion.add(new inforfashion(i));
         }
         mFashionAdapter.setDataFashion(listInforFashion);
