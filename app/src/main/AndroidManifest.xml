@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".fashiondetail.FashionDetailActivity"></activity>
+        <activity android:name=".fashiondetailcontent.fashiondetailcontent"></activity>
     </application>
 
 </manifest>
