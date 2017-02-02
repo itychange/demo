@@ -1,53 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bottom_sheet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:id="@+id/layout_bottom_sheet"
-    android:padding="@dimen/activity_vertical_margin"
     android:background="@color/colorWhite"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
-
+    android:orientation="vertical"
+    android:padding="@dimen/_4sdp"
     tools:layout_gravity="bottom">
 
-    <TextView
-        android:id="@+id/artTitle"
-        style="@style/ArtItemDetailText"
-        tools:text="Title"/>
-
-    <TextView
-        android:id="@+id/artSubTitle"
-        style="@style/ArtItemDetailText"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/secondaryText"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:text="SubTitle"/>
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView3"
-        android:layout_alignParentBottom="true"
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_home_footer"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorDivider"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_height="@dimen/_120sdp"
+        android:scrollbars="none">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- <TextView
+         android:id="@+id/artTitle"
+         style="@style/ArtItemDetailText"
+         tools:text="Title"/>
+
+     <TextView
+         android:id="@+id/artSubTitle"
+         style="@style/ArtItemDetailText"
+         android:layout_marginTop="8dp"
+         android:textColor="@color/secondaryText"
+         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+         tools:text="SubTitle"/>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/colorDivider"
+         android:layout_marginTop="20dp"
+         android:layout_marginBottom="20dp"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:orientation="horizontal">
+
+ <TextView
+     android:text="Reason details: I get up late, because have a little headache last night. So cannot go to work on time.
+ Thank you for your understand."
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
 
 
-
-
-    </LinearLayout>
+     </LinearLayout>-->
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package mrblack.myapplication.fashiondetail.adapter;
+package mrblack.myapplication.fashiondetailcontent.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -24,15 +24,16 @@ import java.util.List;
 
 import mrblack.myapplication.R;
 import mrblack.myapplication.fashiondetail.model.inforfashion;
+import mrblack.myapplication.fashiondetailcontent.model.fashiondetailmodel;
 import mrblack.myapplication.utils.MathUtil;
 
-public class FashionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    private List<inforfashion> mfashionList = new ArrayList<>();
+public class detailadapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    private List<fashiondetailmodel> mfashionList = new ArrayList<>();
     private Context mContext;
     private int itemHeight;
     private ClickEventListener mClickEventListener;
 
-    public FashionAdapter(Context context,ClickEventListener clickEventListener) {
+    public detailadapter(Context context,ClickEventListener clickEventListener) {
         mContext = context;
         itemHeight = MathUtil.getScreenWith(context)/4;
         this.mClickEventListener=clickEventListener;
@@ -50,7 +51,7 @@ public class FashionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        inforfashion album = mfashionList.get(position);
+        fashiondetailmodel album = mfashionList.get(position);
         final FashionViewHolder newsHolder = (FashionViewHolder) holder;
         newsHolder.pLoading.setVisibility(View.VISIBLE);
         Glide.with(mContext).load(album.getImage()).asBitmap().into(new SimpleTarget<Bitmap>() {
@@ -73,7 +74,7 @@ public class FashionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         return mfashionList.size();
     }
 
-    public void setDataFashion(ArrayList<inforfashion> list) {
+    public void setDataFashion(ArrayList<fashiondetailmodel> list) {
         mfashionList = list;
         notifyDataSetChanged();
     }

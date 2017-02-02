@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name"> My Application</string>
+    <string name="app_name">Suggest accessories fashion</string>
     <string name="art_item_btn_favorite_desc">Save to favorites</string>
+    <string name="banner_home_footer">ca-app-pub-3142747330671419/1240701089</string>
 
 </resources>

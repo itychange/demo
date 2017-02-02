@@ -29,7 +29,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="@dimen/_24sdp"
             android:gravity="center_vertical"
-            android:text="SEX"
+            android:text="Continents"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/_18sdp" />
     </LinearLayout>
@@ -42,7 +42,7 @@
         android:orientation="vertical"
         android:visibility="visible">
 
-        <RadioGroup
+      <!--  <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_54sdp"
@@ -50,22 +50,100 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rdMaleCheck1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_8sdp"
-                android:text="Male"
+                android:text="Europe"
                 android:textColor="#ffffff"
                 app:buttonTint="@color/colorWhite" />
 
             <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rdFemaleCheck1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Female"
+                android:text="Asia"
                 android:textColor="#FFFFFF"
                 android:padding="@dimen/_8sdp"
                 app:buttonTint="@color/colorWhite" />
 
-        </RadioGroup>
+        </RadioGroup>-->
+        <mrblack.myapplication.view.ToggleButtonGroupTableLayout
+            android:id="@+id/rdGroupTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_54sdp"
+            android:layout_marginTop="@dimen/_56sdp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdContinentsCheck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Europe"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite"  />
+
+                <RadioButton
+                    android:id="@+id/rdContinentsCheck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Asia"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/group2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdContinentsCheck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="America"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite" />
+
+                <RadioButton
+                    android:id="@+id/rdContinentsCheck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Africa"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/group3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdContinentsCheck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Other"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite" />
+
+
+            </TableRow>
+
+        </mrblack.myapplication.view.ToggleButtonGroupTableLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -92,6 +170,7 @@
                 android:layout_marginTop="@dimen/_8sdp"
                 android:text="CANCEL"
                 android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:visibility="gone"
                 android:textColor="@color/colorWhite" />
         </LinearLayout>
     </LinearLayout>

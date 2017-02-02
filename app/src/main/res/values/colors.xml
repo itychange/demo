@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#0057b4</color>
     <color name="colorGrayWhite">#B6FFFFFF</color>
     <color name="colorWhite">#FFFFFF</color>
 
@@ -29,4 +29,5 @@
     <color name="colorBackgroundLight">@color/colorGrey50</color> <!-- grey 50 -->
     <color name="colorBackground">@color/colorGrey200</color> <!-- grey 200 -->
     <color name="background_dark">#ff333333</color>
+    <color name="colorTextGray100">#f7f7f7</color>
 </resources>

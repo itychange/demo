@@ -1,26 +1,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/_71sdp"
     android:layout_height="@dimen/_71sdp"
+    android:layout_margin="@dimen/_2sdp"
+    android:padding="@dimen/_2sdp"
     android:layout_gravity="center">
 
-    <RelativeLayout
-        style="@style/Widget.AppCompat.Button.Colored"
+    <FrameLayout
+        android:background="@drawable/bg_item_detail_activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center"
+
         android:padding="@dimen/_2sdp">
 
-        <ImageView
+        <android.support.v7.widget.AppCompatImageView
             android:layout_width="@dimen/_71sdp"
             android:layout_height="@dimen/_71sdp"
             android:padding="@dimen/_9sdp"
             android:src="@drawable/dress"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:background="@drawable/bg_item_detail_activity"
             android:textColor="@color/colorWhite"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/imageView" />
-    </RelativeLayout>
+
+            android:id="@+id/ivPhoto" />
+        <ProgressBar
+            android:id="@+id/pLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbar_loading_photo"
+            android:indeterminateDuration="800"
+            android:padding="@dimen/_15sdp"
+            android:visibility="gone"
+
+            />
+    </FrameLayout>
 
 </LinearLayout><!--
 <?xml version="1.0" encoding="utf-8"?>

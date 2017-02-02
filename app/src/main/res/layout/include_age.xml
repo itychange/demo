@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:ads="http://schemas.android.com/tools">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_15sdp">
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal">
 
         <View
             android:id="@+id/viewAge"
@@ -35,74 +36,191 @@
     </LinearLayout>
 
 
-
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/radioGroupAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
         android:orientation="vertical">
+                <!--<RadioGroup
+                    android:id="@+id/rdGroupTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_54sdp"
+                    android:layout_marginTop="@dimen/_56sdp">
 
-        <RadioGroup
-            android:layout_width="wrap_content"
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdAgeCheck1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:text="10 - 19 old"
+                        android:textColor="#FFFFFF"
+                        app:buttonTint="@color/colorWhite" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+
+                        android:id="@+id/rdAgeCheck4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:text="10 - 19 old"
+                        android:textColor="#FFFFFF"
+                        app:buttonTint="@color/colorWhite" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdAgeCheck2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:text="19 - 24 old"
+                        android:textColor="#FFFFFF"
+                        app:buttonTint="@color/colorWhite" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdAgeCheck5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:padding="@dimen/_8sdp"
+                        android:text="19 - 24 old"
+                        android:textColor="#FFFFFF"
+                        app:buttonTint="@color/colorWhite" />
+
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdAgeCheck3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:text="24 - 60 old"
+                        android:textColor="#FFFFFF"
+                        app:buttonTint="@color/colorWhite" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdAgeCheck6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:padding="@dimen/_8sdp"
+                        android:text="24 - 60 old"
+                        android:textColor="#FFFFFF"
+                        app:buttonTint="@color/colorWhite" />
+                </RadioGroup>-->
+        <mrblack.myapplication.view.ToggleButtonGroupTableLayout
+            android:id="@+id/rdGroupTop"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_54sdp"
-            android:layout_marginTop="@dimen/_56sdp"
-            android:orientation="vertical">
+            android:layout_marginTop="@dimen/_56sdp">
 
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatRadioButton
-                android:layout_width="wrap_content"
+                <RadioButton
+                    android:id="@+id/rdAgeCheck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="10 - 15 old"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite"  />
+
+                <RadioButton
+                    android:id="@+id/rdAgeCheck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="16 - 19 old"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/group2"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="10 - 19 old"
-                android:textColor="#FFFFFF"
-                android:padding="@dimen/_8sdp"
-                app:buttonTint="@color/colorWhite"
-                />
+                android:orientation="horizontal">
 
-            <android.support.v7.widget.AppCompatRadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="19 - 24 old"
-                android:textColor="#FFFFFF"
-                android:padding="@dimen/_8sdp"
-                app:buttonTint="@color/colorWhite"
-                />
-            <android.support.v7.widget.AppCompatRadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="24 - 60 old"
-                android:textColor="#FFFFFF"
-                android:padding="@dimen/_8sdp"
-                app:buttonTint="@color/colorWhite"
-                />
+                <RadioButton
+                    android:id="@+id/rdAgeCheck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="20 - 24 old"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite" />
 
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/rdAgeCheck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/_8sdp"
+                    android:text="25 - 30 old"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/group3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdAgeCheck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="31 - 40 old"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite"  />
+
+                <RadioButton
+                    android:id="@+id/rdAgeCheck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/_8sdp"
+                    android:text="41 - 60 old"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="@color/colorWhite"  />
+
+            </TableRow>
+        </mrblack.myapplication.view.ToggleButtonGroupTableLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/rdGroupTop"
             android:orientation="horizontal">
+
             <Button
+                android:id="@+id/btnAge"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/_54sdp"
                 android:layout_marginTop="@dimen/_8sdp"
-                android:id="@+id/btnAge"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
                 android:text="CONTINUE"
-                android:textColor="@color/colorWhite"
                 android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                style="@style/Widget.AppCompat.Button.Colored" />
+                android:textColor="@color/colorWhite" />
+
             <Button
-                android:id="@+id/my_flat_button"
+                android:id="@+id/btnAgeCancel"
+                style="?borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="CANCEL"
-                android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="CANCEL"
                 android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                android:textColor="@color/colorWhite"
-                style="?borderlessButtonStyle" />
+                android:textColor="@color/colorWhite" />
         </LinearLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_item_detail_activity">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:scaleType="fitXY"
+            android:background="@drawable/bg_item_detail_activity"
+            android:src="@drawable/dress"
+            android:textColor="@color/colorWhite" />
+
+        <ProgressBar
+            android:id="@+id/pLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbar_loading_photo"
+            android:indeterminateDuration="800"
+            android:padding="@dimen/_15sdp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>
